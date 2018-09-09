@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#f4f4f4">
+
+
+
+    <RelativeLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#4B72FB">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_arrow_new"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"/>
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_fp_margin_top"
+            android:paddingTop="@dimen/dimen_fp_margin"
+            android:text="Package Delivery History"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_weight=".9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="#4B72FB"
+                />
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/historyViews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               ></LinearLayout>
+
+        </ScrollView>
+        </FrameLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

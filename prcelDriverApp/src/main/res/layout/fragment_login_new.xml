@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#486FFC"
+    android:weightSum="1"
+    android:padding="20dp">
+    <View
+        android:layout_weight=".05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:layout_weight=".35"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/logo_car"/>
+
+    <View
+        android:layout_weight=".05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <RelativeLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@null"
+            android:textColorHint="#ffffff"
+            android:inputType="number"
+            android:maxLength="10"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+        <View
+            android:layout_below="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@null"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:textColorHint="#ffffff"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+        <View
+            android:layout_below="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+        android:id="@+id/tvLoginForgetPassword"
+        android:layout_weight=".15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_fp_margin_top"
+        android:paddingTop="@dimen/dimen_fp_margin"
+        android:text="@string/text_forgetpass"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_weight=".05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/tvLoginSignin"
+            android:layout_weight=".48"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_login"
+            android:text="Login"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_weight=".04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/btnBackSignIn"
+            android:layout_weight=".48"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_regs"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textAllCaps="false"
+            />
+
+
+    </LinearLayout>
+
+
+    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+        android:id="@+id/tvLoginForgetPassword"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/text_copyright"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+</LinearLayout>

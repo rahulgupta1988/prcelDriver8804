@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driver_loginbg"
+    android:weightSum="1"
+    android:padding="20dp">
+
+    <View
+        android:layout_weight=".75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+
+    <View
+        android:layout_weight=".05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/btnFirstSignIn"
+            android:layout_weight=".48"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_login"
+            android:text="Login"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_weight=".04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/btnFirstRegister"
+            android:layout_weight=".48"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_regs"
+            android:text="Registration"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+        android:id="@+id/tvLoginForgetPassword"
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dimen_fp_margin_top"
+        android:paddingTop="@dimen/dimen_fp_margin"
+        android:text="@string/text_copyright"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

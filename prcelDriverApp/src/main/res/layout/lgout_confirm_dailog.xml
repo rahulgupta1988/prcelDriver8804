@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+        android:layout_weight=".5"
+        android:id="@+id/msg_yesno"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Are you sure,  You want to Logout?"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_weight=".49"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:id="@+id/tvLogoutCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="#476EFB"
+            android:gravity="center"
+            android:text="NO"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:id="@+id/tvLogoutOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:background="#476EFB"
+            android:gravity="center"
+            android:text="YES"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

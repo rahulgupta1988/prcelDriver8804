@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/job_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+    <FrameLayout
+        android:layout_weight=".55"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/jobMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/map_refersh_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/map_refresh_ic"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:visibility="gone"/>
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:id="@+id/tvJobCallClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_margin_call_trip"
+            android:background="@drawable/call_btn_notification"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight=".45"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:background="#ffffff">
+
+        <View
+            android:layout_weight="0.03"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+
+        <RelativeLayout
+            android:layout_weight="0.35"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextViewMedium
+                android:id="@+id/clientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Denish Efremov"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                />
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:layout_below="@+id/clientName"
+                android:id="@+id/client_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="192 Osuna Rd. NE, Bldg. CAlbuqerque,NM 87109"
+                android:textColor="#303030"
+                android:textSize="16sp"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#ececec"/>
+
+
+        <RelativeLayout
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:id="@+id/pack_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Pkg type:  Large"
+                android:textColor="#303030"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                />
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/pack_type"
+                android:id="@+id/pack_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Pkg ID:  06"
+                android:textColor="#303030"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_weight="0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#ffffff"
+            android:paddingRight="0dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_weight="0.47"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="#EDEFF1"
+                android:paddingLeft="15dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/booking_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:textColor="#375C9C"
+                    android:textSize="14sp"
+                    />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:layout_below="@+id/booking_txt"
+                    android:id="@+id/booking_date_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18sep-09:00pm"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:layout_marginTop="1dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_weight=".47"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="#EDEFF1"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="15dp"
+                android:visibility="gone">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/delv_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery"
+                    android:textColor="#375C9C"
+                    android:textSize="14sp"
+                    />
+
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:layout_below="@+id/delv_txt"
+                    android:id="@+id/delivery_date_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20sep-09:00pm"
+                    android:textColor="#303030"
+                    android:textSize="16sp"
+                    android:layout_marginTop="1dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_weight="0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_weight="0.17"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/job_start_btn"
+            android:weightSum="1">
+
+
+            <ImageButton
+                android:id="@+id/btnNavigate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/navigation"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true" />
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:id="@+id/tvJobStatus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Arrived"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_centerInParent="true"/>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <RelativeLayout
+            android:layout_weight=".1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivClientImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/driver_onoff"
+            android:layout_marginLeft="10dp"
+            />
+        </RelativeLayout>
+        <View
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

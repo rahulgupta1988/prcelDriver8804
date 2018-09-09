@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Parcel Driver</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_fname">FIRST NAME</string>
+    <string name="text_fname_hint">Enter First Name</string>
+    <string name="text_lname">LAST NAME</string>
+    <string name="text_lname_hint">Enter Last Name</string>
+    <string name="text_email">EMAIL</string>
+    <string name="text_email_hint">Enter Email</string>
+    <string name="text_number">NUMBER</string>
+    <string name="text_number_hint">Enter Number</string>
+    <string name="text_passs">PASSWORD</string>
+    <string name="text_pass_hint">Enter Password</string>
+    <string name="text_pass_current">Current Password</string>
+    <string name="text_pass_current_hint">Enter Current Password</string>
+    <string name="text_pass_new">NEW PASSWORD</string>
+    <string name="text_pass_new_hint">Enter New Password</string>
+    <string name="text_pass_retype">CONFIRM NEW PASSWORD</string>
+    <string name="text_pass_retype_hint">Enter Confirm New Password</string>
+    <string name="text_address">ADDRESS</string>
+    <!-- <string name="text_bio">BIO</string> -->
+    <string name="text_zip">ZIPCODE</string>
+    <string name="text_google">GOOGLE</string>
+    <string name="text_facebook">FACEBOOK</string>
+    <string name="text_next">NEXT</string>
+    <string name="text_signin">Sign In</string>
+    <string name="text_back">Back</string>
+    <string name="text_mything">MY THING</string>
+    <string name="text_desc1">DESC.1</string>
+    <string name="text_desc2">DESC.2</string>
+    <string name="text_comment">Write about your experience.We are always glad to hear from you.</string>
+    <string name="text_register">Register</string>
+    <string name="text_copyright">All Copyright Reserved</string>
+    <string name="text_signin_with">Sign in with</string>
+    <string name="text_username">Username</string>
+    <string name="text_username_hint">Enter Username</string>
+    <string name="text_password">Password</string>
+    <string name="text_password_hint">Enter Password</string>
+    <string name="text_forget_password">FORGOT PASSWORD</string>
+    <string name="text_credit_card_number">CREDIT CARD NUMBER</string>
+    <string name="text_mm">MM</string>
+    <string name="text_yy">YY</string>
+    <string name="text_cvc">CVC</string>
+    <string name="text_addpayment">ADD PAYMENT</string>
+    <string name="text_submit">SUBMIT</string>
+    <string name="text_register_with">Register with</string>
+    <string name="text_or">Or</string>
+    <string name="text_upload_picture">Upload Picture From</string>
+    <string name="text_forgetpass">Forgot Password ?</string>
+    <string name="reset_pass">Please enter your registered mobile number and we will send you the Password</string>
+    <string name="otp_phone">Please request verification code to verify mobile number</string>
+    <string name="text_scan">SCAN</string>
+    <string name="text_trip_details">Trip Details</string>
+    <string name="text_contacting">CONTACTING NEARBY DRIVERS</string>
+    <string name="text_waiting_for_confirm">WAITING FOR DRIVER TO CONFIRM TRIP</string>
+    <string name="text_cancel">CANCEL</string>
+    <string name="text_wait">Wait</string>
+    <string name="text_getting_info_facebook">Getting info from facebook</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="my_location">MY LOCATION</string>
+    <string name="client_location">CLIENT LOCATION</string>
+    <string name="job_start_location">TRIP PICK UP LOCATION</string>
+    <string name="text_miles">KM</string>
+    <string name="text_mins">mins</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_home">Home</string>
+    <string name="text_history">Package Delivery History</string>
+    <string name="text_setting">Settings</string>
+    <string name="text_help">Help</string>
+    <string name="text_avaibility">Availability</string>
+    <string name="text_sound">Sound</string>
+    <string name="text_sound_on">Sound On</string>
+    <string name="text_sound_off">Sound Off</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_seconds"> SECONDS</string>
+    <string name="text_invoice">Invoice</string>
+    <string name="text_base_price">Base Price</string>
+    <string name="text_referral_bonus">Referral Bonus</string>
+    <string name="text_promo_bonus">Promo Bonus</string>
+    <string name="text_distance_cost">Distance Cost</string>
+    <string name="text_destination">Client Destination</string>
+    <string name="text_time_cost">Time Cost</string>
+    <string name="payment_unit">$</string>
+    <string name="text_time">TIME</string>
+    <string name="text_total">Total</string>
+    <string name="text_to_pay">R TO PAY</string>
+    <string name="text_close">CLOSE</string>
+    <string name="text_cost_per_mile">per</string>
+    <string name="text_cost_per_hour">per min</string>
+    <string name="text_no_history">No history to display</string>
+    <string name="text_skip">SKIP</string>
+    <string name="text_taxi_model">Taxi Model</string>
+    <string name="text_taxi_number">Registration Number</string>
+    <string name="text_approve">Your application is under review by admin.</string>
+    <string name="text_approve_by_admin">You will receive confirmation email once admin approves your application.</string>
+    <string name="text_regemail_popup">Please verify your e-mail address, you will not be able to modify it in future.</string>
+    <string name="text_regmodelno_popup">Please verify model of your car, you will not be able to modify it in future.</string>
+    <string name="text_regtaxino_popup">Please verify your taxi number, you will not be able to modify it in future.</string>
+    <string name="text_regaction_popup">Please verify fields mark with info sign, you will not be able to modify these fields in future.</string>
+    <string name="text_profile_popup">This field is not editable.</string>
+    <string name="text_confirm">CONFIRM</string>
+    <string name="text_exit_ok">OK</string>
+    <string name="text_exit_cancel">CANCEL</string>
+    <string name="text_offline_que">Do you want to go offline?</string>
+    <string name="validate_history_date">From-date must be earlier than to-date</string>
+    <string name="text_error_get_image">unable to get image, please try again.</string>
+
+    <!-- facebook app id -->
+    <!--     144748995882121 -->
+
+    <string name="app_id">188574674838201</string>
+    <!-- App name in fb   TaxiNowV3 Driver in elluminati10 -->
+    <!-- drawer array items -->
+    <string-array name="menu_items">
+        <item>PROFILE</item>
+        <!-- <item>PAYMENT</item> -->
+        <item>PROMOTIONS</item>
+        <item>SHARE</item>
+        <item>SUPPORT</item>
+        <item>ABOUT</item>
+        <item>LOGOUT</item>
+    </string-array>
+    <!-- client request -->
+    <string name="text_accept">Accept</string>
+    <string name="text_go_online_to">Go online to\nreceive request</string>
+    <string name="text_reject">Reject</string>
+    <string name="text_go_offline">Go Offline</string>
+    <string name="text_go_online">Go Online</string>
+    <string name="text_offline">Offline</string>
+    <!-- payment dialog -->
+    <string name="text_amount">AMOUNT</string>
+    <string name="text_send">SEND</string>
+    <!-- Job Details -->
+    <string name="text_total_time">Total Time</string>
+    <string name="text_total_distance">Total Distance</string>
+    <string name="text_call">CALL</string>
+    <string name="text_est_time">Est. Time</string>
+    <string name="text_est_distance">Est. Distance</string>
+    <string name="text_walker_started">TAP WHEN STARTED</string>
+    <string name="text_walker_arrived">TAP WHEN ARRIVED</string>
+    <string name="text_walk_started">START TRIP</string>
+    <string name="text_walk_completed">END TRIP</string>
+    <!-- job done -->
+    <string name="text_job_done">JOB DONE</string>
+    <!-- feedback -->
+    <string name="text_empty_feedback">How was your trip?</string>
+    <string name="text_empty_rating">Please give rating to client.</string>
+    <!-- profile -->
+    <string name="text_edit_profile">EDIT PROFILE</string>
+    <string name="text_update_profile">UPDATE PROFILE</string>
+    <!-- validations -->
+    <string name="error_valid_email">Please enter valid email address</string>
+    <string name="error_empty_email">Please enter email address</string>
+    <string name="error_empty_password">Current password must not be blank</string>
+    <string name="error_empty_retypepassword">You must enter confirm new password</string>
+    <string name="error_empty_newpassword">You must enter new password</string>
+    <string name="error_valid_password">Password should at least 6 characters long</string>
+    <string name="error_mismatch_password">Your new password and confirm new password do not match</string>
+    <string name="error_empty_fname">Please enter full name</string>
+    <string name="error_empty_lname">Please enter last name</string>
+    <string name="error_empty_number">Please enter phone number</string>
+    <string name="error_empty_address">Please enter address</string>
+    <string name="error_empty_bio">Please enter bio</string>
+    <string name="error_empty_reg_password">Please enter password</string>
+    <string name="error_empty_zipcode">Please enter zipcode</string>
+    <string name="error_empty_image">Please select profile image</string>
+    <string name="error_empty_type">Please select vehicle type</string>
+    <string name="error_empty_model">Please enter taxi model</string>
+    <string name="error_empty_year">Please enter year</string>
+    <string name="error_empty_maker">Please enter car maker</string>
+    <string name="error_empty_licnumber">Please enter license number</string>
+    <string name="error_empty_taxi_no">Please enter taxi number</string>
+
+    <string name="error_old_pass">Please enter old password</string>
+    <string name="error_new_pass">Please enter new password</string>
+    <string name="error_confirm_pass">Please enter confirm password</string>
+    <string name="error_new_confirm_pass">password and confirm password should be same</string>
+
+
+
+
+
+    <string name="error_phone_no">Please enter mobile number</string>
+    <string name="error_phone_no_len">Phone number should be 10 digit number</string>
+    <string name="error_car_make_no">Please enter car make</string>
+    <string name="error_car_mode_no">Please enter car model</string>
+    <string name="error_car_year_no">Please enter car year</string>
+    <string name="error_license_no">Please enter license </string>
+    <string name="error_password">Please enter password</string>
+    <string name="error_password_len">Password must be at least 6 characters</string>
+    <string name="error_confirm_password">Please enter confirm password</string>
+    <string name="error_terms">Please accept terms and conditions</string>
+
+
+
+    <!-- GCM -->
+    <string name="register_gcm">Registering for GCM</string>
+    <string name="register_gcm_failed">Failed to register with GCM</string>
+    <!-- logout -->
+    <string name="dialog_logout">Logout</string>
+    <string name="dialog_logout_text">Are you sure ?</string>
+
+    <!-- Exit -->
+    <string name="dialog_exit_caps">Exit</string>
+    <string name="dialog_exit_text">Are you sure ?</string>
+
+    <!-- toast -->
+    <string name="toast_no_internet">Internet not available</string>
+    <string name="toast_signin_failed">Signin failed</string>
+    <string name="toast_register_success">Thank You for your registration,please wait while the admin approves your request</string>
+    <string name="toast_register_failed">Registration failed</string>
+    <string name="Ok">OK</string>
+    <string name="toast_facebook_login_failed">facebook login failed</string>
+    <string name="toast_unable_to_selct_image">unable to select image</string>
+    <string name="toast_unable_respond_request">Unable to respond request</string>
+    <string name="toast_unable_send_request">Request sending failed</string>
+    <string name="toast_feedback_success">Thank you for feedback!</string>
+    <string name="toast_feedback_failed">Feedback sending failed</string>
+    <string name="toast_time_over">Your time is over for respond request</string>
+    <string name="toast_number_not_found">Number not found</string>
+    <string name="toast_update_profile_success">Profile updated Successfully </string>
+    <string name="toast_update_profile_failed">Update Failed</string>
+    <string name="toast_email_ivalid">Not a valid email</string>
+    <string name="toast_forget_password_success">Password sent to your registerd phone number</string>
+    <string name="toast_chnage_password_success">Password Changed Successfully</string>
+    <string name="otp_success">Verification code sent.</string>
+    <string name="verify_otp_success">Verification done..</string>
+    <!-- dialog -->
+    <string name="dialog_title_select_time">SELECT TIME</string>
+    <string name="dialog_title_country_codes">COUNTRY CODES</string>
+    <string name="dialog_chhose_photo">CHOOSE PHOTO</string>
+    <string name="dialog_from_gallery">GALLERY</string>
+    <string name="dialog_from_camera">CAMERA</string>
+    <string name="dialog_no_internet">No Internet</string>
+    <string name="dialog_no_gps">No GPS</string>
+    <string name="dialog_no_inter_message">You have not active internet connection.</string>
+    <string name="dialog_no_gps_messgae">Seems like you have not started your location service.</string>
+    <string name="dialog_enable_gps">Enable GPS</string>
+    <string name="dialog_enable_3g">Enable 3G</string>
+    <string name="dialog_enable_wifi">Enable WIFI</string>
+    <string name="dialog_exit">Exit</string>
+    <!-- progress dialog -->
+    <string name="progress_dialog_sign_in">SIGNING IN</string>
+    <string name="progress_dialog_register">REGISTERING</string>
+    <string name="progress_dialog_request">GETTING REQUESTS</string>
+    <string name="progress_dialog_loading">LOADING</string>
+    <string name="progress_rating">RATING SERVICE</string>
+    <string name="progress_respond_request">RESPONDING REQUESTS</string>
+    <string name="progress_send_request">SENDING REQUESTS</string>
+    <string name="progress_waiting_for_invoice">WAITING FOR INVOICE</string>
+    <string name="progress_waiting_for_signature">WAITING FOR SIGNATURE</string>
+    <string name="progress_loading">LOADING</string>
+    <string name="progress_getting_info">GETTING INFO</string>
+    <string name="progress_update_profile">UPDATING PROFILE</string>
+    <string name="progress_getting_types">GETTING TYPES</string>
+    <string name="progress_getting_history">GETTING HISTORY</string>
+    <string name="progress_please_wait">PLEASE WAIT</string>
+    <string name="progress_getting_avaibility">GETTING AVAILABILITY</string>
+    <string name="progress_changing_avaibilty">CHANGING AVAILABILITY</string>
+    <!-- location -->
+    <string name="connection_error_code">Connection failure error code: %1$d</string>
+    <string name="connection_error_disabled">Google Play services is disabled</string>
+    <string name="connection_error_internal">An internal error occurred</string>
+    <string name="connection_error_invalid">The version of Google Play services on this device is not authentic</string>
+    <string name="connection_error_invalid_account">The specified account name is invalid</string>
+    <string name="connection_error_license_check_failed">The app is not licensed to the user</string>
+    <string name="connection_error_message">Connection failure error message: %1$s</string>
+    <string name="connection_error_misconfigured">The application is misconfigured</string>
+    <string name="connection_error_missing">Google Play services is missing</string>
+    <string name="connection_error_needs_resolution">Additional resolution is required</string>
+    <string name="connection_error_network">A network error occurred</string>
+    <string name="connection_error_outdated">Google Play services is out of date</string>
+    <string name="connection_error_sign_in_required">The user is not signed in</string>
+    <string name="connection_error_unknown">An unknown error occurred</string>
+// otp error
+    <string name="error_otp_verify">Please enter correct verification code</string>
+
+    <!-- dialog -->
+
+    <string name="dialog_no_location_service">Please turn on location service from settings, must press on/off toggle and agree to access location and restart an app.\nNote:if you have already did choices with disagree and dont show dialog again then location dialog not show when you press on/off toggle button.to solve this problem you must clear all setting preferences.</string>
+    <string name="dialog_no_location_service_title">Locaton service is off.</string>
+    <string name="dialog_enable_location_service">Go to Location Service</string>
+    <string name="text_select_service">Select your vehicle</string>
+    <string name="text_register_caps">REGISTER</string>
+    <string name="text_signin_caps">SIGN IN</string>
+    <string name="text_forgot_password">Your password will be sent to your registered email</string>
+    <!-- Map Key -->
+    <!-- Debug Key Nirali AIzaSyAEcBm6f43qp870eZQELF2r-QU36X9Hne0 -->
+    <!-- Elluminati elluminati.in    AIzaSyB-kN8-wAofARvN6RtPjMYO1pSyd81_5l8 -->
+    <!-- sign    AIzaSyDRQpJroOAKVACx1nwCO7ePW2d3Z6VKs2w -->
+    <!-- general AIzaSyD76XDxtlveZVEzW1L8teO4tiY_ALpfe9A -->
+
+
+    <!-- <string name="map_api_key">AIzaSyD76XDxtlveZVEzW1L8teO4tiY_ALpfe9A</string> -->
+
+
+    <!-- Arjunraj, Taxinowv3 -->
+    <string name="map_api_key">AIzaSyAfbCpiNO0T3_JKASSBB0Lhgt7tgSW9rFU</string>
+    <string name="text_yesterday">YESTERDAY</string>
+    <string name="text_today">TODAY</string>
+    <string name="text_forget_pass_small">Forget Password</string>
+    <string name="text_referral_code">Referral Code</string>
+    <string name="text_feedback">Feedback</string>
+    <string name="text_feedback_completed">Thank you for feedback!</string>
+    <string name="text_creditCard">Payment Type : Credit Card</string>
+    <string name="text_cash">Payment Type : Cash</string>
+    <string name="text_type_cash">Cash</string>
+    <string name="text_type_card">Card</string>
+    <string name="text_share_app">Share app!</string>
+    <string name="text_share">Share</string>
+    <string name="title_activity_history_details">HistoryDetailsActivity</string>
+    <string name="text_from">from</string>
+    <string name="text_to">to</string>
+    <string name="text_select_date">Select date</string>
+    <string name="wating_for_address">Waiting for Address</string>
+    <string name="text_am_using">I am using</string>
+    <string name="text_why_dont_try_install">App ! Why don\'t you try it out...\nInstall</string>
+    <string name="text_now">now !</string>
+    <string name="text_app">App !</string>
+    <string name="text_success">Success</string>
+
+    <string name="error_facebook_login_failed">facebook login failed</string>
+    <string name="text_comments">Comments</string>
+    <!-- error code -->
+    <string name="error_1">This Email is not Registered</string>
+    <string name="error_2">Password field is required.</string>
+    <string name="error_3">Email field is required</string>
+    <string name="error_4">First Name field is required.</string>
+    <string name="error_5">Last Name field is required.</string>
+    <string name="error_6">Image is required</string>
+    <string name="error_7">Push notification token is required.</string>
+    <string name="error_8">Device type must be android or ios</string>
+    <string name="error_9">Login type is required.</string>
+    <string name="error_10">Phone number must be required.</string>
+    <string name="error_11">Social Login unique id must be required.</string>
+    <string name="error_12">Invalid Input</string>
+    <string name="error_13">Invalid Phone Number</string>
+    <string name="error_14">Email ID already Registred</string>
+    <string name="error_15">Login by mismatch</string>
+    <string name="error_16">Invalid Username and Password</string>
+    <string name="error_17">Not a Registered User</string>
+    <string name="error_18">Not a valid social registration User</string>
+    <string name="error_19">Id of Request is required.</string>
+    <string name="error_20">Your unique id is missing.</string>
+    <string name="error_21">Already Rated</string>
+    <string name="error_22">Service ID does not matches with Service Provider ID</string>
+    <string name="error_23">Service ID Not Found</string>
+    <string name="error_24">Token Expired</string>
+    <string name="error_25">Service Provider ID not Found</string>
+    <string name="error_26">Not a valid token</string>
+    <string name="error_27">Service Already Started</string>
+    <string name="error_28">location points are missing.</string>
+    <string name="error_29">accept or reject must be required.</string>
+    <string name="error_30">Request ID does not matchesService Provider ID</string>
+    <string name="error_31">Request Canceled.</string>
+    <string name="error_32">Request ID Not Found</string>
+    <string name="error_33">Service Provider not yet confirmed</string>
+    <string name="error_34">Service not yet started</string>
+    <string name="error_35">Service Provider not yet arrived</string>
+    <string name="error_36">Distance is required.</string>
+    <string name="error_37">Time is required.</string>
+    <string name="error_38">Invalid Old Password</string>
+    <string name="error_39">Old Password must not be blank</string>
+    <string name="error_40">Successfully Log-Out</string>
+
+
+
+
+</resources>

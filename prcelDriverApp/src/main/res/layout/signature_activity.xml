@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#F4F4F4">
+
+
+    <RelativeLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#4B72FB">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back_arrow_new"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"/>
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="User Agreement"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_weight=".65"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_weight=".25"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#4B72FB"
+                android:gravity="center">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="User's  Signature"
+                    android:textSize="22sp"
+                    android:textColor="#ffffff"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_weight=".05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#4B72FB"/>
+
+            <View
+                android:layout_weight=".7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="0dp">
+            <View
+                android:layout_weight=".2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <RelativeLayout
+                android:layout_weight=".8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/rect_white"
+                android:gravity="center"
+                android:padding="5dp">
+
+               <include layout="@layout/signature_view"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_weight=".7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <View
+        android:layout_weight=".08"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:layout_weight=".12"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/tvsubmit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_login"
+            android:text="Delivered"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/sig_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_weight=".05"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

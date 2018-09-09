@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/mob_ic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mobile_prof"
+            android:layout_centerVertical="true"/>
+
+         <RelativeLayout
+               android:layout_toRightOf="@+id/mob_ic"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp">
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="#265cbe"
+            android:textSize="14sp" />
+
+             <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                android:layout_below="@+id/txt1"
+                 android:id="@+id/phone_txt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:hint="Mobile Number"
+                 android:textColor="#303030"
+                 android:background="@null"
+                 android:textColorHint="#303030"
+                 android:inputType="number"
+                 android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+      </RelativeLayout>
+         </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/email_ic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/email_ic"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/email_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#265cbe"
+                    android:textSize="14sp" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                    android:layout_below="@+id/txt2"
+                    android:id="@+id/email_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="test@gmail.com"
+                    android:textColor="#303030"
+                    android:background="@null"
+                    android:textColorHint="#303030"
+                    android:inputType="text"
+                    android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/add_ic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/add_lamp"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/add_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#265cbe"
+                    android:textSize="14sp" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                    android:layout_below="@+id/txt2"
+                    android:id="@+id/address_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:textColor="#303030"
+                    android:background="@null"
+                    android:textColorHint="#303030"
+                    android:inputType="text"
+                    android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay4"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/car_ic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/car_make"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/car_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make"
+                    android:textColor="#265cbe"
+                    android:textSize="14sp" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                    android:layout_below="@+id/txt2"
+                    android:id="@+id/carmake_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Ford"
+                    android:textColor="#303030"
+                    android:background="@null"
+                    android:textColorHint="#303030"
+                    android:inputType="text"
+                    android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay5"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/model_ic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/car_mode_prof"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/model_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:textColor="#265cbe"
+                    android:textSize="14sp" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                    android:layout_below="@+id/txt3"
+                    android:id="@+id/carmodel_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="F150"
+                    android:textColor="#303030"
+                    android:background="@null"
+                    android:textColorHint="#303030"
+                    android:inputType="text"
+                    android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay6"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/year_ic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/car_year_prof"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/year_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Year"
+                    android:textColor="#265cbe"
+                    android:textSize="14sp" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                    android:layout_below="@+id/txt4"
+                    android:id="@+id/caryear_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="2013"
+                    android:inputType="number"
+                    android:textColor="#303030"
+                    android:textColorHint="#303030"
+                    android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay7"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/licen_ic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/licence_number_pprof"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/licen_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="License Number"
+                    android:textColor="#265cbe"
+                    android:textSize="14sp" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                    android:layout_below="@+id/txt5"
+                    android:id="@+id/license_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="4b.8121.15.05"
+                    android:textColor="#303030"
+                    android:background="@null"
+                    android:textColorHint="#303030"
+                    android:inputType="text"
+                    android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:id="@+id/lay8"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/package_ic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/package_ic"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/package_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Package Type"
+                    android:textColor="#265cbe"
+                    android:textSize="14sp" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontEdittextView
+                    android:layout_below="@+id/txt5"
+                    android:id="@+id/package_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Small"
+                    android:textColor="#303030"
+                    android:background="@null"
+                    android:textColorHint="#303030"
+                    android:inputType="text"
+                    android:textSize="18sp"></com.parcelsixd.parcel.driver.widget.MyFontEdittextView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/lay8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#8ca4ff" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/app_back_color"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearOffline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnOffline"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/onine_logo_new"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:id="@+id/tex11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Go online to"
+                android:textSize="22sp"
+                android:textColor="#2C2C2C" />
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:layout_below="@+id/tex11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="receive request"
+                android:textSize="22sp"
+                android:textColor="#2C2C2C"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/clientReqMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btnMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_for_mylocation_btn"
+            android:background="@null"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ub_button_mylocation" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+      <include
+            android:id="@+id/clientDetailView"
+            layout="@layout/include_detail_view_accept_reject"
+            android:visibility="gone" />
+
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/btnClientReqRemainTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_margin_call_trip"
+            android:background="@drawable/timer"
+            android:text="58"
+            android:textColor="@color/color_text_dark"
+            android:textSize="@dimen/size_general"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llAcceptReject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/btnClientAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_small"
+            android:gravity="center"
+            android:text="@string/text_accept"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_general" />
+
+        <com.parcelsixd.parcel.driver.widget.MyFontButton
+            android:id="@+id/btnClientReject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_small_light"
+            android:gravity="center"
+            android:text="@string/text_reject"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_general" />
+    </LinearLayout>
+
+    <com.parcelsixd.parcel.driver.widget.MyFontButton
+        android:id="@+id/btnOffline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFDB00"
+        android:gravity="center"
+        android:text="@string/text_go_offline"
+        android:textColor="#2C2C2C"
+        android:textSize="@dimen/size_general"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

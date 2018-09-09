@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/includeDriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_fp_margin"
+                android:paddingLeft="@dimen/margin_legt_name_star"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/dimen_fp_margin">
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextViewMedium
+                    android:id="@+id/tvClientName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_general" />
+
+                <com.parcelsixd.parcel.driver.widget.MyFontTextViewMedium
+                    android:id="@+id/tvClientRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_fp_margin_top"
+                    android:layout_toRightOf="@+id/dividerRate"
+                    android:drawableLeft="@drawable/rate_star"
+                    android:drawablePadding="@dimen/activity_margin_register"
+                    android:gravity="center_horizontal"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_general" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/divider_register" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_margin_register"
+                android:layout_marginLeft="@dimen/margin_legt_name_star"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_fp_margin_top"
+                    android:orientation="vertical">
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextViewMedium
+                        android:id="@+id/titleTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/feedback_padding"
+                        android:text="@string/text_est_time"
+                        android:textColor="@color/color_text_label"
+                        android:textSize="@dimen/size_label" />
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:id="@+id/tvJobTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_text_dark"
+                        android:textSize="@dimen/size_general_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextViewMedium
+                        android:id="@+id/titleDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/feedback_padding"
+                        android:text="@string/text_est_distance"
+                        android:textColor="@color/color_text_label"
+                        android:textSize="@dimen/size_label" />
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:id="@+id/tvJobDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_text_dark"
+                        android:textSize="@dimen/size_general_small" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/activity_margin_register"
+            android:layout_marginLeft="@dimen/dimen_margin_left_photo"
+            android:layout_marginTop="@dimen/activity_margin_register">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivClientImage"
+                android:layout_width="@dimen/driver_photo_size"
+                android:layout_height="@dimen/driver_photo_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user" />
+
+            <include
+                layout="@layout/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider_register" />
+
+    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+        android:id="@+id/tvDestinationAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/location_dot_runtime"
+        android:drawablePadding="@dimen/activity_margin_register"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_margin_register"
+        android:paddingLeft="@dimen/dimen_fp_margin"
+        android:paddingRight="@dimen/dimen_fp_margin_top"
+        android:paddingTop="@dimen/activity_margin_register"
+        android:singleLine="true"
+        android:textColor="@color/color_text_dark"
+        android:textSize="@dimen/size_general"
+        android:visibility="gone" />
+
+</LinearLayout>

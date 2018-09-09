@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rect_white"
+        android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <ImageView
+            android:id="@+id/compt_ic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/right_circle_green"/>
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_weight=".65"
+        android:layout_toRightOf="@+id/compt_ic"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:id="@+id/deliveredto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Package Delivery History"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:layout_below="@+id/deliveredto"
+            android:id="@+id/packid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Package Delivery History"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/downup_ic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/down_arrow"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:orientation="vertical"
+            android:id="@+id/bar1"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_weight=".6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="#4B72FB"
+                android:layout_centerVertical="true"
+               />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp">
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:id="@+id/bookto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Booking"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:layout_below="@+id/bookto"
+                android:id="@+id/bookon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="27-Nov-5:30pm"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+        <View
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:orientation="vertical"
+            android:id="@+id/bar2"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_margin="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="#4B72FB"
+                    android:layout_centerVertical="true" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:id="@+id/deliveryto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Delivery"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:layout_below="@+id/deliveryto"
+                        android:id="@+id/deliveryon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="27-Nov-5:30pm"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:orientation="vertical"
+            android:id="@+id/bar3"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_margin="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#4B72FB"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:id="@+id/pickupto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Pickup Address"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:layout_below="@+id/pickupto"
+                        android:id="@+id/pickupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="192 Osuna Rd. NE,Bldg. C Albquuerque, NM 18109 192 Osuna Rd. NE,Bldg. C Albquuerque, NM 18109"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:weightSum="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:orientation="vertical"
+            android:id="@+id/bar4"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_margin="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#4B72FB"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:id="@+id/destinationto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Destination Address"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                        android:layout_below="@+id/destinationto"
+                        android:id="@+id/destinationon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="192 Osuna Rd. NE,Bldg. C Albquuerque, NM 18109"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+        <com.parcelsixd.parcel.driver.widget.MyFontTextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Total Price      $"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+            <com.parcelsixd.parcel.driver.widget.MyFontTextView
+                android:layout_toRightOf="@+id/txt1"
+                android:id="@+id/price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="10"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

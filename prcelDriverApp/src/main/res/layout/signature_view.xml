@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:weightSum="2"
+        android:gravity="center"
+        android:background="@drawable/rect_white"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Clear"
+            tools:ignore="ButtonStyle"
+            android:textColor="#ffffff"
+            android:background="#6FA4C6" />
+        <Button
+            android:id="@+id/getsign"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="save"
+            tools:ignore="ButtonStyle"
+            android:textColor="#000000"
+            android:background="#f4f491"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/canvasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" />
+</LinearLayout>
